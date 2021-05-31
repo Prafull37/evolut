@@ -1,0 +1,1543 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+<style>
+body{
+	font-family: 'PT Sans', sans-serif;
+}
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #BBBBBB;
+;
+}
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content: space-between;
+align-items: center;
+transition: 0.6s;
+padding: 10px 40px;
+z-index:100;
+}
+.line-1{
+		border: 1px solid #97212D;
+	    padding: 0px 500px;
+	transform:translateY(330px);
+	margin: 0px 70px;
+	opacity:0.2;
+}
+header .logo{
+  filter: brightness(0) invert(1);
+  padding-left: 10px;
+}
+header ul{
+position:relative;
+display:flex;
+justify-content: center;
+align-items:center;
+padding-right: 80px;
+}
+header ul li{
+position:relative;
+list-style:none;
+font-family: PT Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+float:left;
+padding-right: 30px;
+}
+header ul li a{
+position:relative;
+margin: 0px 10px;
+text-decoration:none;
+color:#FFFFFF;
+letter-spacing:2px;
+font-weight:500px;
+}
+header ul li a:hover{
+ color:#fff;
+ transition: .9s
+ z-index:101;
+}
+header ul li a::after{
+	 content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s ease;
+}
+
+header ul li a:hover:after{
+	transform:scaleX(1);
+}
+header.sticky {
+ background:#FFFFFF;
+ padding: 0px 40px;
+}
+header.sticky ul li a{
+color: #B82B20;
+}
+header.sticky ul li a::after{
+	background-color:  #B82B20;
+    color: #B82B20;
+}
+header.sticky .logo{
+filter:none;
+}
+.adl{
+padding-left:30px;
+}
+
+.video-container{
+ width:100%;
+ height:640px;
+ background:#000000;
+ }
+ 
+.video-container video{
+ width:100%;
+ height:640px;
+ }
+.video-title{
+   color:#FFFFFF;
+   transform:translateY(-400px);
+   margin-left: 40px;
+   font-family:PT Sans;
+  }
+.video-DESC{
+   color:#FFFFFF;
+   transform:translateY(-450px);
+   margin-left: 40px;
+   font-size:60px;
+   font-family: PT Sans;
+  }
+.video-tag{
+   color:#FFFFFF;
+   transform:translateY(-490px);
+   margin-left: 40px;
+   font-family: PT Sans;
+  }
+  
+
+.adjust{
+   padding: 0px 70px;
+}
+.adjust-1{
+   padding-left: 100px;
+}
+
+ .adj{
+   padding: 0px 60px;
+}
+.ad{
+   padding-left: 60px;
+}
+
+
+  
+.title{
+  font-family: PT Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 31px;
+letter-spacing: 0px;
+text-align: left;
+color: #B82B20;
+}
+.grad-img{
+transform:translateY(2px);
+margin-left:-10px;
+}
+.line{
+ margin-top:-15px;
+ }
+ 
+ 
+.left {
+  width: 60%;
+  height: 400px;
+  background: linear-gradient(110.52deg, #1B5AC2 0.64%, #CA2725 94.8%);
+border-radius:16px 0px 0px 16px;
+}
+.left-img{
+  transform:translateY(20px);
+}
+.p1{
+  visibility:visible;
+  margin-top:50px;
+}
+.left:hover{
+   width:60%;
+}
+.left:hover .p1{
+  visibility: visible;
+}
+.left:hover .left-img{
+  transform:translateY(20px);
+}
+h2{
+ margin-top:50px;
+}
+
+
+
+.right{
+	float: right;
+	 width: 40%;
+  height: 400px;
+  background: linear-gradient(110.52deg, #1B5AC2 0.64%, #CA2725 94.8%);
+    margin-top: 0px;
+  margin-right:0px;
+ 
+border-radius:0px 16px 16px 0px;
+}
+.p2{
+ visibility:hidden;
+ margin-top:50px;
+}
+.right-img{ 
+transform:translateY(-180px);
+}
+.right:hover{
+  width:60%;
+}
+.right:hover .p2{
+  visibility: visible;
+}
+.right:hover .right-img{
+  transform:translateY(-20px);
+}
+
+
+.card .right:hover .card .left .p1{
+visibility:hidden;
+}
+
+.adjust{
+   padding: 0px 100px;
+}
+
+#one:hover .right-img{
+ transform:translateY(-180px);
+}
+
+#one:hover ~ #two{
+ width:40%;
+ transition: 0.9s;
+ }
+ 
+ #one:hover ~ #two .p1{
+ visibility:hidden;
+ }
+
+ #one:hover ~ #two .left-img{
+ transform:translateY(20px);
+ }
+
+
+
+.left-1 {
+  width: 60%;
+  height: 400px;
+  background: linear-gradient(110.52deg, #1B5AC2 0.64%, #CA2725 94.8%);
+border-radius:16px 0px 0px 16px;
+}
+.left-img-1{
+transform:translate(80px,-47px);
+}
+.p1{
+  visibility:visible;
+  margin-top:50px;
+}
+.left-1:hover{
+   width:60%;
+}
+.left-1:hover .p1{
+  visibility: visible;
+}
+.left-1:hover .left-img-1{
+ transform:translate(80px,-47px);
+}
+h2{
+ margin-top:50px;
+}
+
+
+
+.right-1{
+	float: right;
+	 width: 40%;
+  height: 400px;
+  background: linear-gradient(110.52deg, #1B5AC2 0.64%, #CA2725 94.8%);
+    margin-top: 0px;
+  margin-right:0px;
+ 
+border-radius:0px 16px 16px 0px;
+}
+.p2{
+ visibility:hidden;
+ margin-top:50px;
+}
+.right-img-1{ 
+transform:translateY(-130px);
+}
+.right-1:hover{
+  width:60%;
+}
+.right-1:hover .p2{
+  visibility: visible;
+}
+.right-1:hover .right-img-1{
+transform:translateY(-130px);
+}
+
+
+.adjust{
+   padding: 0px 100px;
+}
+
+#three:hover .right-img-1{
+ transform:translateY(0px);
+}
+
+#three:hover ~ #four{
+ width:40%;
+ trnsition: 0.9s;
+ }
+ 
+ #three:hover ~ #four .p1{
+ visibility:hidden;
+ }
+
+ #three:hover ~ #four .left-img-1{
+ transform:translateY(40px, -47px);
+ }
+
+
+.left-2 {
+  width: 60%;
+  height: 400px;
+  background: linear-gradient(110.52deg, #1B5AC2 0.64%, #CA2725 94.8%);
+border-radius:16px 0px 0px 16px;
+}
+.left-img-2{
+transform:translate(174px,-56px);
+}
+.p1{
+  visibility:visible;
+  margin-top:50px;
+}
+.left-2:hover{
+   width:60%;
+}
+.left-2:hover .p1{
+  visibility: visible;
+}
+.left-2:hover .left-img-2{
+ transform:translate(174px,-56px);
+}
+h2{
+ margin-top:50px;
+}
+
+
+
+.right-2{
+	float: right;
+	 width: 40%;
+  height: 400px;
+  background: linear-gradient(110.52deg, #1B5AC2 0.64%, #CA2725 94.8%);
+    margin-top: 0px;
+  margin-right:0px;
+ 
+border-radius:0px 16px 16px 0px;
+}
+.p2{
+ visibility:hidden;
+ margin-top:50px;
+}
+.right-img-2{ 
+transform:translateY(1px);
+}
+.right-2:hover{
+  width:60%;
+}
+.right-2:hover .p2{
+  visibility: visible;
+}
+.right-2:hover .right-img-2{
+transform:translateY(250px);
+}
+
+
+.adjust{
+   padding: 0px 100px;
+}
+
+#five:hover .right-img-2{
+ transform:translateY(157px);
+}
+
+#five:hover ~ #six{
+ width:40%;
+ trnsition: 0.9s;
+ }
+ 
+ #five:hover ~ #six .p1{
+ visibility:hidden;
+ }
+
+ #five:hover ~ #six .left-img-2{
+ transform:translateY(100px, -56px);
+ }
+
+
+
+
+.test{
+background-image:url("images/test_bg.png");
+height:500px;
+background-repeat:no-repeat;
+background-size:cover;
+width:auto;
+}
+.test-head{
+font-family: Rubik;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 48px;
+letter-spacing: 0px;
+text-align: left;
+transform:translate(20px,45px);
+}
+.card-red{
+width:420px;
+height:385px;
+color:#fff;
+background-color:#97212D;
+transform:translate(350px,-400px);
+}
+.card-white{
+width:420px;
+height:385px;
+color:#000;
+background-color:#fff;
+transform:translate(800px,-786px);
+}
+.test-desc{
+padding:50px 20px;
+}
+
+
+	
+	
+.main-2{
+	margin-left:4.5rem;
+	}
+	
+.gallery{
+  position: relative;
+  display: flex;
+  margin-left: 5%;
+}
+.image-1{
+   width: 500px;
+   height: 500px;
+   opacity: 1;
+      
+    position: relative;
+background: -webkit-linear-gradient(180deg, rgba(35, 88, 187, 0.24) 0%, rgba(201, 39, 38, 0.24)100%), url("images/image 1.png");
+}
+.image-2{
+  margin-left: 1%;
+   width: 500px;
+   height: 500px;
+   opacity: 1; 
+    position: relative;
+background: -webkit-linear-gradient(180deg, rgba(35, 88, 187, 0.24) 0%, rgba(201, 39, 38, 0.24)100%), url("images/image 27.png");
+}
+.image-3{
+  margin-left: 6%;
+   width:291px;
+   height: 251px;
+   opacity: 1; 
+    position: relative;
+background: -webkit-linear-gradient(180deg, rgba(35, 88, 187, 0.24) 0%, rgba(201, 39, 38, 0.24)100%), url("images/image 28.png");
+transform: translateX(5.5rem);
+margin-top: -0.5rem;
+}
+.image-4{
+  margin-left: 6%;
+   width: 291px;
+   height: 251px;
+   opacity: 1; 
+    position: relative;
+background: -webkit-linear-gradient(180deg, rgba(35, 88, 187, 0.24) 0%, rgba(201, 39, 38, 0.24)100%), url("images/image 29.png");
+transform: translateX(85px);
+	margin-top: -0.5rem;
+}
+.gallery1{
+  margin-left: 0rem;
+  margin-right: 17%;
+  margin-top: -19%;
+  float: right;
+  position: relative;
+  display: flex;
+}
+ .overlay-11{
+      position: absolute;
+      bottom: 0;
+      left: 0%;
+      right: 0;
+      background:linear-gradient(to bottom, #2358BB 0%, #C92726 100%);
+    
+      overflow: hidden;
+      width: 100%;
+      height: 0%;
+      transition: .5s ease;
+      margin-left: 0%;
+      margin-right: 2%;
+	  z-index:1000;
+      
+    }
+.image-1:hover .overlay-11{
+      height: 100%;
+    }
+.image-2:hover .overlay-11{
+      height: 100%;
+    }
+  .text-1 {
+ color: white;
+ font-size: 26px;
+ position: absolute;
+ text-align:left;
+ width:80%;
+ left:3%;
+ top:10%;
+}
+	
+	
+
+  .container-4{
+      position: relative;
+       box-sizing: border-box;
+      border-radius: 16px;
+      padding-left:20px;
+
+    }
+    .img-1{
+      display: block;
+      height: auto;
+      margin-left: 50px;
+        
+       
+    }
+    .overlay-1{
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      right: 0;
+      background:linear-gradient(to bottom, #2358BB 0%, #C92726 100%);
+      border-radius: 16px;
+      overflow: hidden;
+      width: 80%;
+      height: 0%;
+      transition: .5s ease;
+      margin-left: 15%;
+      margin-right: 2%;
+      
+    }
+    .container-4:hover .overlay-1{
+      height: 100%;
+    }
+.container-5{
+      position: relative;
+       box-sizing: border-box;
+      border-radius: 16px;
+      padding-right:50px;
+	  padding-left:-20px;
+
+    }
+
+    .img-2{
+      display: block;
+      height: auto;
+      margin-left: 20%;
+       margin-right: 14%; 
+        
+    }
+    .overlay-2{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background:linear-gradient(to bottom, #2358BB 0%, #C92726 100%);
+      border-radius: 16px;
+      overflow: hidden;
+      width: 86%;
+      height: 0%;
+      transition: .5s ease;
+      margin-left: 17%;
+    }
+    .container-5:hover .overlay-2{
+      height: 100%;
+    }
+    .text-2 {
+  color: white;
+  font-size: 26px;
+  position: absolute;
+  left: 40%;
+  top: 75%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  float: left;
+}
+.ht{
+margin-top:-30px;
+margin-left: -5px;
+}
+.container-6{
+      position: relative;
+       box-sizing: border-box;
+      border-radius: 16px;
+    
+
+    }
+    .img-3{
+      display: block;
+      height: auto;
+       margin-left: 60px; 
+       margin-right: 100px;
+       
+    }
+    .overlay-3{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 5%;
+      background:linear-gradient(to bottom, #2358BB 0%, #C92726 100%);
+      border-radius: 16px;
+      overflow: hidden;
+      width: 67%;
+      height: 0%;
+      transition: .5s ease;
+      margin-left: 12%;
+    }
+    .container-6:hover .overlay-3{
+      height: 100%;
+    }
+    .text-3 {
+      margin-top: 20px;
+  color: white;
+  font-size: 26px;
+  position: absolute;
+  left: 40%;
+  top: 70%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  float: left;
+}
+	.main-1{
+   box-sizing: border-box;
+  position: relative;
+  display: flex;
+  margin-left: 90px;
+  margin-right: 10px;
+  
+  }
+
+ .button{
+    color: #ffffff;
+      background-color: #B82B20;
+  border: none;
+  padding: 4px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+   width: 130px;
+  cursor: pointer;
+  border-radius: 16px;
+  margin-left: 44%;
+ }
+.news-img-overlay{
+      width: 35%;
+    }
+    .news-img{
+ margin-left:80px;
+border-radius:16px;
+}
+	
+
+.coln{
+  box-shadow: 1px 1px 1px 1px   #B8B8B8;
+  margin-right: 2%;
+  border-radius: 4px;
+  color: #97212D;
+
+}
+.coln-2{
+   box-shadow: 1px 1px 1px 1px  #B8B8B8;
+   margin-left: 5%;
+   border-radius: 4px;
+}
+.row-1{
+  display: flex;
+  text-align: center;
+  margin-left: 150%;
+  height: 374px;
+width: 568px;
+left: 436px;
+top: 4318px;
+border-radius: 2px;
+
+}
+ 
+   .container-1{
+     box-sizing: border-box;
+  height: 374px;
+width: 265px;
+left: 436px;
+top: 4318px;
+border-radius: 8px;
+
+}
+  ul{
+      list-style: none;
+    }
+
+
+  .contact{
+  	height: 550px;
+	background: linear-gradient(to bottom, #2A56B5 0%, #B52D38 100%);
+  }
+  .form {
+  position: absolute;
+  margin-top: 5rem;
+  margin-left: 8rem;
+  width: 45rem;
+  height:20rem;
+ 
+}
+input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  
+  border-radius: 4px;
+}
+input:focus
+{
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 3px #ffffff;
+    outline-offset: 0px;
+    outline: none;
+}
+.btn {
+  background-color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  width: 80%;
+  
+  border-radius: 5px;
+}
+.btn1 {
+ background:transparent;
+  padding: 16px 20px;
+  border: none;
+  width: 100%;
+ opacity: 1;
+ border: 1px solid white;
+ color:#FFFFFF;
+}
+.btn2 {
+ background:transparent;
+  padding: 5px 20px;
+  border: none;
+  width: 100%;
+  opacity: 1;
+  border: 1px solid white;
+  height:100px;
+   color:#FFFFFF;
+}
+.download{
+	height: 550px;
+	background: linear-gradient(to bottom, #2A56B5 0%, #B52D38 100%);
+}
+
+
+
+ .container3{
+   box-sizing: border-box;
+        width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    color: #B82B20;
+    
+
+      }
+      
+
+      
+      .footer{
+   box-sizing: border-box;
+    padding: 70px 0;
+}
+.main{
+   box-sizing: border-box;
+        color:#B82B20 ;
+
+      }
+      .para{
+  color: #000000;
+  font-size: 15px;
+
+}
+.row-1{
+        display: flex;
+        float: left;
+        flex-direction: row;
+        color: #B82B20;
+        margin-top: 10px;
+        margin-bottom: 2rem;
+        padding-left: 1px;
+  }
+    
+.col{
+  float: right;
+   width: 25%;
+   padding: 20 15px ;
+     margin-left: 180px;
+	   color: #97212D;
+     
+}
+.col-1{
+  float: right;
+  margin-top: 84px;
+  margin-left: 0px;
+    color: #97212D;
+}
+
+
+     .container1{
+   box-sizing: border-box;
+        width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    color: #B82B20;
+    
+
+      }
+      
+      .footer{
+   box-sizing: border-box;
+    padding: 70px 0;
+}
+
+      .para{
+  color: #000000;
+  font-size: 15px;
+
+}
+.row-2{
+        display: flex;
+        float: left;
+        flex-direction: row;
+        color: #B82B20;
+        margin-top: 10px;
+        margin-bottom: 2rem;
+        padding-left: 1px;
+		margin-left: -96px;
+  }
+    
+.col{
+  float: right;
+   width: 25%;
+   padding: 20 15px ;
+     margin-left: 180px;
+     
+}
+.col-1{
+  float: right;
+  margin-top: 84px;
+  margin-left: 0px;
+
+}
+
+ul{
+  list-style: none;
+}
+
+.view-img{
+margin-top:2rem;
+}
+.copyright{
+color: #B82B20;
+font-size:14px;
+}
+.adjist{
+padding:0px 300px;
+}
+@media only screen  and (max-width: 1440px){
+	.left-img{
+		transform:translateY(167px);
+	}
+	.left:hover .left-img{
+		transform:translateY(167px);
+	}
+	.privacy{
+		transform:translateX(660px);
+	}
+	.terms{
+		transform:translateX(660px);
+	}
+	.container-4{
+		margin-left:45px;
+	}
+	
+		
+}
+@media only screen  and (max-width: 1024px){
+.gallery {
+    position: relative;
+    display: flex;
+    margin-left: -4%;
+}
+.image-2 {
+    margin-left: 2%;
+    width: 505px;
+    height: 254px;
+    opacity: 1;
+    position: relative;
+    background: -webkit-linear-gradient(
+180deg
+, rgba(35, 88, 187, 0.24) 0%, rgba(201, 39, 38, 0.24)100%), url(images/image 27.png);
+}
+.gallery1 {
+    margin-left: 0rem;
+    margin-right: 13%;
+    margin-top: -21%;
+    float: right;
+    position: relative;
+    display: flex;
+}
+.image-3 {
+    margin-left: 1%;
+    width: 246px;
+    height: 251px;
+    opacity: 1;
+    position: relative;
+    background: -webkit-linear-gradient(
+180deg
+, rgba(35, 88, 187, 0.24) 0%, rgba(201, 39, 38, 0.24)100%), url(images/image 28.png);
+    transform: translateX(8rem);
+    margin-top: -3.5rem; 
+    /* margin-top: -4.5rem; */
+}
+.image-4 {
+    margin-left: 6%;
+    width: 246px;
+    height: 251px;
+    opacity: 1;
+    position: relative;
+    background: -webkit-linear-gradient(
+180deg
+, rgba(35, 88, 187, 0.24) 0%, rgba(201, 39, 38, 0.24)100%), url(images/image 29.png);
+    transform: translateX(112px);
+    margin-top: -3.5rem;
+}
+.view-img {
+    transform: tranlateX(-21rem);
+    margin-left: -50rem;
+}
+.form {
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    width: 34rem;
+    height: 20rem;
+}
+.container-4 {
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin-right: 2rem;
+}
+.row-2 {
+    display: flex;
+    float: left;
+    flex-direction: row;
+    color: #B82B20;
+    margin-top: 14px;
+    margin-bottom: 2rem;
+    padding-left: 1px;
+    margin-left: -132px;
+    width: 80%;
+}
+.image-2{
+  margin-left:1%;
+  }
+.col {
+    float: right;
+    width: 29%;
+    padding: 20 15px;
+    margin-left: 172px;
+}
+.col-1 {
+    float: right;
+    margin-top: 91px;
+    margin-left: -1px;
+}
+.copyright {
+    width: 105%;
+    transform: translate(-21rem, 19rem);
+    text-align: center;
+    margin-left: -4rem;
+	color: #B82B20;
+}
+.copyright-1 {
+    width: 105%;
+    transform: translate(3rem, 0rem);
+    text-align: center;
+    margin-left: -4rem;
+	padding: 0 3rem;
+	color: #B82B20;
+}
+.coln {
+    box-shadow: 2px 2px 2px 2px #b8b8b8;
+    margin-left: -30%;
+    border-radius: 4px;
+}
+.coln-2 {
+    box-shadow: 2px 2px 2px 2px #b8b8b8;
+    margin-left: 6%;
+    border-radius: 4px;
+}
+.right {
+    float: right;
+    width: 35%;
+    height: 400px;
+    background: linear-gradient(
+110.52deg
+, #1B5AC2 0.64%, #CA2725 94.8%);
+    margin-top: -400px;
+    margin-right: 0px;
+    border-radius: 0px 16px 16px 0px;
+}
+.p1 {
+    visibility: visible;
+    margin-top: 50px;
+    font-size: small;
+}
+.right-img {
+    transform: translateY(-104px);
+    width: 106%;
+}
+.left-img {
+       transform: translateY(94px);
+    width: 55%;
+}
+.left-img-1 {
+    transform: translateY(77px);
+    width: 50%;
+}
+.right-img-1 {
+    transform: translateY(60px);
+    width: 81%;
+}
+ .left-img-2 {
+    transform: translateY(47px);
+    width: 60%;
+}
+.right-2 {
+    float: right;
+    width: 35%;
+    height: 400px;
+    background: linear-gradient(
+110.52deg
+, #1B5AC2 0.64%, #CA2725 94.8%);
+    margin-top: -400px;
+    margin-right: 0px;
+    border-radius: 0px 16px 16px 0px;
+}
+.right-img-2 {
+    transform: translateY(-135px);
+    width: 92%;
+}
+}
+	
+.adjuust{
+	padding:0 10%;
+	}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" ><img src="images/evolutlogo.png" width="225px" height="75px" class="logo"></img></a> 
+  <ul>
+	<li> <a href="index.html#AboutUs"><b> ABOUT US</b></a></li>
+	<li> <a href="blog.html"><b> BLOG </b></a></li>
+	<li> <a href="news.html"><b> NEWS </b></a></li>
+	<li> <a href="index.html#Contact"><b> CONTACT US </b></a></li>
+	</ul>
+</header>
+<script type="text/javascript">
+   window.addEventListener("scroll", function(){
+     var header = document.querySelector("header");
+	 header.classList.toggle("sticky",window.scrollY > 0);
+	 })
+</script>	
+
+<section class="banner">
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+	
+	<div class="video-container">
+	      <video autoplay muted loop playsinline>
+		     <source src="images/Get ready to MOVE.mp4" type="video/mp4">
+		  </video>
+		  <p class="Video-title"> EVOLVE  WITH  EVOLUT </p>
+		  <p class="Video-Desc"><b> Evolve Better and <br/>be Healthier</b></p>
+		  <p class="Video-tag"> #EVOLUT<b>MOVEUP</b> </p>
+	</div>
+</section>
+ <br>     
+ <section id="AboutUs">
+	   <div class="row adjust">
+	   <div class="col-12">
+  	<h2 class="abt" style="color: #B82B20;font-size: 36px;"><center><img src="images/Rectangle.png" style="margin-bottom:-12px; height:50px;" />ABOUT US</center></h2>
+  	<p style="margin-left: 4%;margin-right: 4%;">Evolut established In 2020.Evolut is a combination of many things,fitness,yoga, and nutrition are among them.Instead of making fitness a chore, we are attempting to help people make it a lifestyle choice, by exercising and eating right.Fitness is the bedrock of a healthy life, to ensure the people are at their very best while performing in thier life,it is crucial for them to lead healthy lives off it.The importance of hoslstic wellness has been felt even more since the pandemic hit the world.</p>
+  	<center><img src="images/image 24.png"/></center>
+  	<p style="margin-left: 4%;margin-right: 4%;">We are proud to announce that Delhi Capitals have signed the health brand- Evolut as its official health associate forward of IPL 2021. Evolut is a health app that 
+gives a wide selection of fitness-related options. From yoga to eating regimen plans, Evolut has obtained all of it. It’s a one-stop-shop for all health aficionados. Delhi Capitals being a face of the youth is an ideal host for a health model and with the affiliation with the Delhi Capitals, Evolut will look to draw the millennials and proliferate into the bag market of health.</p>
+  </div>
+  </div>
+ </section> 
+  <br>
+
+	  
+<div class ="row adjuust">
+    <div class="col-12 adj">
+	 <p class="title"> Evolut &nbsp <img src="images/FITNESS.png" class="grad-img"></p>
+	 <img src="images/Rectangle 2289.png" class="line"></img>
+	 </div>
+   </div>
+   
+ <br>
+	<div class= "row">
+ <div class="col-12 adjust">
+	
+                  <div  id = "one" class = "right">
+			<h2 style="float: left; color: #ffffff; margin-left:20px;">YOGA</h2><br/><br/><br/>
+		<p style="float:left; color: #ffffff; margin-left:-55px;" class="p2">If Yoga is your calling, then make your mat time a<br/>
+transformational one parcticing bandhas and <br/>
+chaturangas with celebrities who will share their <br/>
+expertise with you. Anushka Parwani or Sonal <br/>
+Chauhan, take your pick They will guide you with <br/>
+asana and pranayama. </p>
+		<img src="images/07.png"  width="450px" height="450px" style="float: right; margin-top:-90px;" class="right-img" />
+                  </div>
+
+
+             <div id="two"  class = "left">
+			<h2 style="float: left; color: #ffffff; margin-left:20px;">FITNESS</h2><br/><br/><br/>
+		<p style="float:left; color: #ffffff; margin-left:-90px;" class="p1" id="p1">If Fitness is your calling, Minash Gabriel and <br/>
+Deanne Panday will motivate you to do each <br/>
+superset until failure. Fiery strength and <br/>
+monstrous energy- be it all yours!</p>
+		<img src="images/02.png"  width="400px" height="400px" style="float: right; margin-top:-220px;" class="left-img" />
+               </div>
+</div>
+</div>      
+		
+		
+<br>
+  <div class ="row adj">
+    <div class="col-12 adj">
+	 <p class="title"> Evolut &nbsp <img src="images/Nutrition.png"class="grad-img"></p>
+	 <img src="images/Rectangle 2289.png" class="line"></img>
+	 </div>
+   </div>
+
+
+ <br>
+	<div class= "row">
+ <div class="col-12 adjust">
+	
+                  <div  id = "three" class = "right-1">
+			<h2 style="float: left; color: #ffffff; margin-left:20px;">PERSONAL COACH NUTRITION MEAL <br/> PLANS</h2><br/><br/><br/>
+		<p style="float:left; color: #ffffff; margin-left:20px; margin-top:-5px;" class="p2">Unlock your potential with good nutrition through<br/>
+periodic monitoring by experts who will tell you <br/>
+what's good for the mind and body. Boost your <br/>
+productivity and improve sleep quality by eating<br/>
+wholesome food. Meat or millet, it's for the body <br/>
+you will beget. </p>
+		<img src="images/image 20.png"  style="float: right; margin-top:-90px;" class="right-img-1" />
+                  </div>
+
+
+             <div id="four"  class = "left-1">
+			<h2 style="float: left; color: #ffffff; margin-left:20px;">NUTRITION MEAL PLANS</h2><br/><br/><br/>
+		<p style="float:left; color: #ffffff; margin-left:-250px;" class="p1" id="p1">If you’re in the pursuit of happiness <br/>
+through healthful eating, Evolut is where <br/>
+you want to be. Our customized nutrition plans <br/>
+will help you muscle without much hustle. <br/>
+Qua Nutrition’s Ryan Fernando will assist you <br/>
+plan a healthy future through mindful eating <br/>
+ticking all your macro needs. </p>
+		<img src="images/08.png"  width="400px" height="400px" style="float: right; margin-top:-220px;" class="left-img-1" />
+               </div>
+
+
+            
+
+</div>
+</div>      
+	    </div>
+	 
+<br>
+  <div class ="row adj">
+    <div class="col-12 adj">
+	 <p class="title"> Evolut &nbsp <img src="images/Health.png"class="grad-img"></p>
+	 <img src="images/Rectangle 2289.png" class="line"></img>
+	 </div>
+   </div>
+	 
+
+ <br>
+	<div class= "row">
+ <div class="col-12 adjust">
+	
+                  <div  id = "five" class = "right-2">
+			<h2 style="float: left; color: #ffffff; margin-left:20px;">UNDERGO LAB TESTS</h2><br/><br/><br/>
+		<p style="float:left; color: #ffffff; margin-left:-220px; margin-top:60px;" class="p2">Evolut also has a unique offering of diagnostic services<br/>
+through its partner SRL Diagnostics. At-home test to <br/>
+check your vital parameters will be conducted and <br/>
+reports will hit your email inbox. </p>
+		<img src="images/kisspng-scientist-experiment-laboratory-test-tube-female-doctor-5a7473a6e3af97 1.png" style="float: right; margin-top:-90px;" class="right-img-2" />
+                  </div>
+
+
+             <div id="six"  class = "left-2">
+			<h2 style="float: left; color: #ffffff; margin-left:20px;">SHOP HEALTHY PRODUCTS</h2><br/><br/><br/>
+		<p style="float:left; color: #ffffff; margin-left:-280px;" class="p1" id="p1">The organic aisle in your supermarket is right here! <br/>
+Pick your daily needs via the in-app store that has shelf <br/>
+space for multi-grains, spices, herbal teas, coffees and <br/>
+more. Fill your cart here and we will empty it right at <br/>
+your doorstep in no time. Ditto with all the fitness <br/>
+accessories. Kettle bells, ropes, EZ bars - they will all <br/>
+come home to give your fitness a lift-up.</p>
+		<img src="images/05.png" width="500px" height="500px" style="float: right; margin-top:-220px;" class="left-img-2" />
+               </div>
+
+
+            
+
+</div>
+</div>   
+</div>
+</div>
+</div>
+</div>   
+<br>
+<br>
+<br>
+<br>
+<br>  
+ <div class="row">
+      <div class="col-12">
+	      	<h2 class="abt" style="color: #B82B20;font-size: 36px;"><center><img src="images/Rectangle.png" style="margin-bottom:-12px;  height:50px;" />BLOG</center></h2>
+     </div>
+	 </div>
+
+<div class="main-2 ">
+  <div class="gallery">
+    
+    <section class="image-1"><h4 style="position: absolute;color:#ffffff;top:70%;left:2%;background: linear-gradient(180deg, #1D59C0 0%, #A1334A 100%);">HEALTH</h4>
+      <p style="color: #ffffff;margin-left: 2%;margin-top: 80%;font-family: PT Sans;font-size: 26px;font-style: normal;font-weight: 700;line-height: 34px;letter-spacing: 0px;text-align: left;
+">10 Easy Tips For a Healthy Holiday<br/> season</p>
+
+<div class="overlay-11">
+      <div class="text-1">
+	  <p style="position: absolute;color:#ffffff;top:-10%;left:1%;background: linear-gradient(180deg, #1D59C0 0%, #A1334A 100%); font-size:18px;">  HEALTH </p>
+	  <p style="text-align: justify; float: left;"><b>10 Easy Tips For a Healthy Holiday season</b></p>
+	  <h5 style="color: #ffffff; margin-left: 1%;font-family: PT Sans;font-size: 12px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0px;text-align: left;">BY ADMIN       <img src="images/pngaaa.com-593527.png" width="10px" height="10px" style="top:1%;"/> MARCH 7, 2021 </h5>
+        <p style="font-size: 13px; text-align: left; width:100%">After a long and challenging year, everyone is looking forward to a happy and celebratory Christmas and New Year's Eve holidays! <br/><br/>
+		The holiday season is associated with warmth, comfort, family, joy, celebrations, delicious food and fun. Food and festivities often go together, and it can be quite hard to control temptation at the sight of the tables laden with all sorts of a delicious feast. The widespread laid with mouth-watering dishes and tempting pastries is a real challenge even for the most dedicated health advocates to be healthy during the holidays.</p>
+		<br>
+<p style="font-size: 14px; transform:translateY(-15px);">READ MORE </p>
+<a href="blog_post.html"><img src="images/Group 2313.png" style="transform:translate(80px,-55px);"></img></a>
+    </div>
+    </div>
+    </section>
+  
+ 
+      <!--<section  class="image-2">
+        <h4 style="position: absolute;color:#ffffff; margin-left:2%;margin-top: 30%;
+        background: linear-gradient(180deg, #1D59C0 0%, #A1334A 100%);">FITNESS</h4>
+        <p style="color: #ffffff;font-family: PT Sans;font-size: 18px;font-style: normal;font-weight: 700;line-height: 34px;letter-spacing: 0px;text-align: left;margin-top: 34%; margin-left: 2%;">How to Make Exercise a Regular Habit in 6 Steps</p>
+<div class="overlay-11">
+      <div class="text-1"><h4 style="float: left;margin-left: -10%; margin-top: -2%;  font-size:8px;color:#ffffff; background-color: linear-gradient(180deg, #1D59C0 0%, #A1334A 100%); ">PRESS RELEASE</h4><p style="text-align: justify; float: left;">10 Easy Tips For a Healthy Holiday season</p>
+        <p style="font-size: 16px; text-align: left;">After a long and challenging year, everyone is looking forward to a happy and celebratory Christmas and New Year's Eve holidays! <br/>
+The holiday season is associated with warmth, comfort, family, joy, celebrations, delicious food and fun. Food and festivities often go together, and it can be quite hard to control temptation at the sight of the tables laden with all sorts of a delicious feast. The widespread laid with mouth-watering dishes and tempting pastries is a real challenge even for the most dedicated health advocates to be healthy during the holidays.</p><p style="font-size: 10px">READ MORE</p>
+    </div>-->
+
+      </section>
+    </div>
+<!--  <div class="gallery1">
+    
+    <section class="image-3">
+      <h4 style="position: absolute;color:#ffffff; margin-left:2%;margin-top: 58%;
+        background: linear-gradient(180deg, #1D59C0 0%, #A1334A 100%);">NUTIRTION</h4>
+      <p style="color: #ffffff;font-family: PT Sans;font-size: 18px;font-style: normal;font-weight: 700;line-height: 34px;letter-spacing: 0px;text-align: left;margin-top: 70%;">What If Food Isn't The Problem?</p>
+    </section>
+    
+      <section class="image-4 "> 
+        <h4 style="position: absolute;color:#ffffff; margin-left:2%;margin-top: 58%;
+        background: linear-gradient(180deg, #1D59C0 0%, #A1334A 100%);">LIFE STYLE</h4>
+        <p style="color: #ffffff;font-family: PT Sans;font-size: 18px;font-style: normal;font-weight: 700;line-height: 34px;letter-spacing: 0px;text-align: left;margin-top: 66%;">Top 6 Food Supplements For Depression</p>
+    </section>
+      </section>  -->  
+  </div>
+</div>
+<div class="row">
+      <div class="col-12">
+		  <a href="blog.html"><center> <img src="images/view.png"  class="view-img"></img></center></a>
+     </div>
+	 </div>
+<br>
+
+
+
+<div class="row">
+      <div class="col-12">
+	      	<h2 class="abt" style="color: #B82B20;font-size: 36px;"><center><img src="images/Rectangle.png" style="margin-bottom:-12px;  height:50px;" />NEWS</center></h2>
+     </div>
+	 </div>
+<div class="main-1">
+  <div class="container-4 adl" >
+    <img src="images/image 41.png"  class="img-1" width="300px" height="300px"  />
+    <div class="overlay-1">
+      <div class="text-1">
+	  <h4 style="position: absolute;color:#ffffff;top:70%;left:2%;background: linear-gradient(180deg, #1D59C0 0%, #A1334A 100%); font-size:12px; transform:translateY(-210px);">PRESS RELEASE</h4>
+	  <h4 style="float: left;margin-left:0%; font-size:19px;color:#ffffff; background-color: linear-gradient(180deg, #1D59C0 0%, #A1334A 100%); ">IPL 2021:Delhi Capitals (DC) Health Accomplice ropes in Evolut as its Official <br/> </h4>
+	  <h5 style="color: #ffffff; margin-left: 1%;font-family: PT Sans;font-size: 12px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0px;text-align: left;">BY ADMIN <img src="images/pngaaa.com-593527.png" width="10px" height="10px" style="top:1%;"/> MARCH 25, 2021 </h5>
+	  <br>
+	 <p style="font-size: 14px; transform:translateY(-15px);">Read More </p>
+<a href="news1.html"><img src="images/Group 2313.png" style="transform:translate(80px,-55px);"></img></a>
+    </div>
+    </div>
+    </div>
+    <div class="container-5">
+        <img src="images/delhi.png" width="300px" height="300px" class="img-2" />
+    <div class="overlay-2">
+      <div class="text-1">
+	  	  <h4 style="position: absolute;color:#ffffff;top:70%;left:2%;background: linear-gradient(180deg, #1D59C0 0%, #A1334A 100%); font-size:12px; transform:translateY(-210px);">PRESS RELEASE</h4>
+	  <h4 style="float: left;margin-left:0%; font-size:19px;color:#ffffff; background-color: linear-gradient(180deg, #1D59C0 0%, #A1334A 100%); ">Delhi Capitals ropes in Cornitos and Evolut Wellness as official partners <br/> </h4>
+	  <h5 style="color: #ffffff; margin-left: 1%;font-family: PT Sans;font-size: 12px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0px;text-align: left;">BY ADMIN <img src="images/pngaaa.com-593527.png" width="10px" height="10px" style="top:1%;"/> MARCH 26, 2021 </h5>
+	  <br>
+	 <p style="font-size: 14px; transform:translateY(-15px);">Read More </p>
+<a href="news2.html"><img src="images/Group 2313.png" style="transform:translate(80px,-55px);"></img></a>
+    </div>
+    </div>
+  </div>
+  <div class="container-6">
+  <img src="images/image 40.png" width="300px" height="300px" class="img-3"/>
+<div class="overlay-3">
+      <div class="text-1">
+	    <h4 style="position: absolute;color:#ffffff;top:70%;left:2%;background: linear-gradient(180deg, #1D59C0 0%, #A1334A 100%); font-size:12px; transform:translateY(-230px);">PRESS RELEASE</h4>
+	  <h4 style="float: left;margin-left:0%; font-size:19px;color:#ffffff; background-color: linear-gradient(180deg, #1D59C0 0%, #A1334A 100%); ">Delhi Capitals Team 2021 Back 'Make In India' With Another Top Indian Brand As Sponsor <br/> </h4>
+	  <h5 style="color: #ffffff; margin-left: 1%;font-family: PT Sans;font-size: 12px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0px;text-align: left;">BY ADMIN <img src="images/pngaaa.com-593527.png" width="10px" height="10px" style="top:1%;"/> MARCH 27, 2021 </h5>
+	  <br>
+	 <p style="font-size: 14px; transform:translateY(-15px);">Read More </p>
+<a href="news4.html"><img src="images/Group 2313.png" style="transform:translate(80px,-55px);"></img></a>
+    </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row">
+      <div class="col-12">
+		  <a href="news.html"><center> <img src="images/view.png" style="margin-top:1rem; transform:translateX(1rem);"></img></center></a>
+     </div>
+	 </div>
+<br>
+<div class="row ad">
+      <div class="col-12">
+	      	<h2 class="abt" style="color: #B82B20;font-size: 36px;"><center><img src="images/Rectangle.png" style="margin-bottom:-12px;  height:50px; margin-left:-41px;" />MEET OUR FOUNDERS</center></h2>
+     </div>
+	 </div>
+ <p class="para2 adjust">There isn't a one-way of main a balanced life. It's a mixture of many issues, and health, yoga, and vitamin are amongst them. As a substitute of creating health a chore, we are trying to assist folks make it a way of life alternative, by exercising and consuming proper.</p>
+    <br/><br/>
+    <div class="container-1">
+  <div class="row-1">
+    <div class="coln">
+      <img src="images/Screenshot  1.png" style="margin-top:10px;"/><p style="color:#292F39; font-size: 20px; margin-top:-10px;">Vinuthna Nidadavolu</p><h4 style="color:#808080; margin-top:-10px;">Founder & Managing Partner</h4>
+    <a href="https://www.linkedin.com/in/vinuthna-gorripati-637b371b9">  <img src="images/image 30.png"/></a>
+    </div>
+    <div class="coln-2">
+      <img src="images/Screenshot 2.png" style="margin-top:10px; width:265px;"/>
+      <p style="color:#292F39; font-size: 20px; margin-top:-6px;">Meghana Nidadavolu</p>
+      <h4 style="color: #808080; margin-top:-10px;">Co-Founder & Partner</h4>
+		<a href="https://www.linkedin.com/in/meghana-nidadavolu"><img src="images/image 31.png"/></a>
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="row">
+   <div class="col-12">
+       <img src="images/Group 8002.png" style="width:100%"></img>
+   </div>
+</div>   
+
+<br>
+<div class="row">
+   <div class="col-12">
+       <img src="images/testimonial-1.png" style="width:100%"></img>
+   </div>
+</div>   
+
+<!--<div class="container">
+
+<div class="test">
+<p style="color:#97212D;" class="test-head"> What <br/> Customers Say </p>
+</div>
+
+<div class="col-6">
+   <div class="card-red">
+       <img src="images/test-1.png" style="transform:translate(20px,40px);"/>
+	   <p class="test-desc"> One of the best apps ! I lost 4.5 kgs in 2 weeks just following the workouts and the diet plan given. But it does require you to remain consistent and regular with your efforts. For those who are dedicated to getting fit, this is THE app. Must try </p>
+	   <p class="text-desc" style="transform:translateX(20px);"><b> Lalitha Sindhura </b></p>
+    </div>
+</div>
+
+<div class="col-6">
+   <div class="card-white">
+       <img src="images/test-2.png" style="transform:translate(20px,40px);"/>
+	   <p class="test-desc">This app is unique in the sense it's probably the most complete app... It includes all forms of fitness, like yoga, regular exercises, for both home and gym and then it has diet plans and even gives you recipes and how to cook videos. </p>
+	   <p class="text-desc" style="transform:translateX(20px);"> <b> Karthik Adiraju </b> </p>
+    </div>
+</div>
+
+</div> -->
+
+<div class="row ad" >
+      <div class="col-12">
+	      	<h2 class="abt" style="color: #B82B20;font-size: 36px;"><center><img src="images/Rectangle.png" style="margin-bottom:-12px;  height:50px;" />CONTACT</center></h2>
+     </div>
+	 </div>
+
+<section id="Contact">
+<div class="row contact">
+	<div class="col-4">
+		  <form action="" class="form">
+   
+    <label for="subject"><b></b></label>
+    <input type="text" placeholder="Subject" name="subject" class="btn1"  required>
+    <br/> 
+    <label for="email"><b></b></label>
+    <input type="text" placeholder="Email" name="email" class="btn1"  style="border:1px solid #fff" required>
+    <label for="message"><b></b></label>
+    <input type="text" placeholder="Write Your Message Here...." name="" class="btn2" required>
+    <br/>
+   <br/>
+   <button type="submit" class="btn" onclick="window.location.href='mailto:help@evolutwellness.com">Submit</button>
+   <br/>
+			  <a href="mailto:help@evolutwellness.com" style="text-decoration:none"><p style="color: #ffffff;">help@evolutwellness.com</p></a><br/>
+			  <a href="https://www.facebook.com/evolutwellness"> <img src="images/facebook-f.png" style="width:14px"> </a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+			    <a href="https://www.instagram.com/evolutwellness/"><img src="images/instagram1.png"/></a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <a href="https://www.linkedin.com/company/evolut-wellness/">  <img src="images/linkedin-in.png" style="width:25px"/></a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		 <a href="https://twitter.com/evolutwellness">  <img src="images/Path 1202-w.png"/></a>	
+		
+	
+	   </form>
+	</div>
+	<div class="col-8">
+		<img src="images/female-bodybuilder.png" style="float: right; height:550px; " />
+	</div>
+</div>
+   </div>
+  </div>
+</div>
+</section>
+
+
+
+  <footer >
+      <div class="container">
+        <div class="row-2">
+          <div class="col">
+          <img src="images/evolutlogo.png"/>
+            <P class="para">Evolut Established in 2020.Evolut is a combination of
+             many things,fitness,yoga, and nutrition are among them.
+            Instead of making fitness a chore, we are attempting to
+             help people make it a lifestyle choice, by exercising and
+              eating right </P><br/>
+              <a href="https://www.facebook.com/evolutwellness">  <img src="images/path 1205.png"/></a>&nbsp &nbsp &nbsp &nbsp
+              <a href="https://www.instagram.com/evolutwellness/">   <img src="images/instagram.png"/> </a>&nbsp &nbsp &nbsp &nbsp
+			    <a href="https://www.linkedin.com/company/evolut-wellness/">  <img src="images/linkedin-in-grad.png" style="width:25px;"/></a>&nbsp &nbsp &nbsp &nbsp &nbsp
+			  <a href="https://twitter.com/evolutwellness"> <img src="images/path 1202.png" style="transform:translateY(2px);"/></a>
+                                 
+          </div>
+            <div class="col">
+                <p style="font-size:20px;">Get In Touch</p>
+              <ul style="margin-left:-32px;">
+            <li class="ht"> <img src="images/Line 72.png" style="margin-top: -0px;" />&nbsp &nbsp &nbsp </li>
+              <p style="font-size:20px;">Address </p>
+                <li><img src="images/path 3879.png" alt="not found"  />&nbsp Flat no 209, Aparna Green Apartments, Nanakramguda, Hyd-500008.</li>
+				<br>
+                <li><img src="images/clock.png" alt="not found" />&nbsp Mon-Fri 08:00 AM - 09:00 PM</li>
+              </ul>
+            </div><br/>
+              <div class="col-1" style="margin-top:55px;">
+               <p style="margin-top: 33px; font-size:20px">Contact Info</p> 
+                <ul style="margin-left:-37px;">
+               <a href="mailto:help@evolutwellness.com" style="text-decoration:none;  color:#97212D">   <li><img src="images/Group 1703.png" alt="not found" />&nbsp help@evolutwellness.com</li><br/></a>
+                </ul>           
+              </div>
+      
+        </div>
+      </div><br/>
+	   <div class="line-1 adj">
+	  </div>
+	  
+	<ul style="display:flex">
+       <li><p class="copyright" style="float:left; transform:translate(40px, 30px); font-size:16px;"><center style="transform:translate(45px,33px); color:#97212D">Copyright &#169; 2020 ViMags Health & Lifestyle</center></p>
+		</li>
+      <li style="float:right;"><a href="terms.html" class="a1" style="text-decoration:none;"><p class="copyright terms" style="text-decoration:none;"><center style="transform: translate(730px, 15px); color:#97212D;" class="terms">Terms and Conditions | </center></p></a></li>
+   <li><a href="privacy-policy.html" class="a1"  style="text-decoration:none;"><p class="copyright privacy"><center style="transform: translate(730px, 15px); color:#97212D;" class="privacy"> &nbsp Privacy Policy</center></p></a></li>
+	  </ul>
+    </footer>
+<br/>
+ 
+ 
+ 
+</body>
+</html>
