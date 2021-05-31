@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>blog</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<style type="text/css">
+	header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content: space-between;
+align-items: center;
+transition: 0.6s;
+padding: 10px 50px;
+z-index:100;
+}
+header .logo{
+  filter: brightness(0) invert(1);
+  padding-left: 10px;
+}
+header ul{
+position:relative;
+display:flex;
+justify-content: center;
+align-items:center;
+padding-right: 80px;
+}
+header ul li{
+position:relative;
+list-style:none;
+font-family: PT Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+float:left;
+padding-right: 20px;
+}
+header ul li a{
+position:relative;
+margin: 0px 10px;
+text-decoration:none;
+color:#FFFFFF;
+letter-spacing:2px;
+font-weight:500px;
+}
+header ul li a:hover{
+ color:#fff;
+ transition: .9s
+ z-index:101;
+}
+header ul li a::after{
+	 content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s ease;
+	text-decoration:none;
+}
+
+header ul li a:hover:after{
+	transform:scaleX(1);
+}
+header.sticky {
+ background:#FFFFFF;
+ padding: 0px 40px;
+}
+header.sticky ul li a{
+color: #B82B20;
+}
+header.sticky ul li a::after{
+	background-color:  #B82B20;
+    color: #B82B20;
+}
+header.sticky .logo{
+filter:none;
+}
+
+
+		body{
+		}
+	.date{
+		font-size:16px;
+		}
+	.title{
+		color:  #B82B20;
+		}
+	.desc{
+		font-size:16px;
+		}
+	a{
+		text-decoration:none;
+		}
+	.row{
+		margin-top:0px;
+		}
+		.a1{
+			color: #B82B20;
+			text-decoration: none;
+		}
+	.img-1{
+    padding: 0px 0px;
+    width: 100%;
+    height: 590px;
+    text-align: center;
+    background: linear-gradient(180deg,rgba(35,88,187,0.5)0%,rgba(201,39,38,0.5)),url("images/image 33.png");
+  }
+	.title-1{
+		font-family: PT Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: center;
+transform:translateY(-350px);
+color:#ffffff;
+	}
+.descrip{
+	font-family: PT Sans;
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 0px;
+text-align: center;
+color:#ffffff;
+transform:translateY(-350px);
+
+	}
+	.anchor{
+	text-decoration:none;
+	}
+	
+     .container3{
+   box-sizing: border-box;
+        width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    color: #B82B20;
+    
+
+      }
+      
+
+      
+      .footer{
+   box-sizing: border-box;
+    padding: 70px 0;
+}
+.main{
+   box-sizing: border-box;
+        color:#B82B20 ;
+
+      }
+      .para{
+  color: #000000;
+  font-size: 15px;
+
+}
+.row-1{
+        display: flex;
+        float: left;
+        flex-direction: row;
+        color: #B82B20;
+        margin-top: 10px;
+        margin-bottom: 2rem;
+        padding-left: 1px;
+  }
+    
+.col{
+  float: right;
+   width: 25%;
+   padding: 20 15px ;
+     margin-left: 180px;
+     
+}
+.col_1{
+  float: right;
+  margin-top: 84px;
+  margin-left: 0px;
+
+}
+
+
+     .container1{
+   box-sizing: border-box;
+        width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    color: #B82B20;
+    
+
+      }
+      
+      .footer{
+   box-sizing: border-box;
+    padding: 70px 0;
+}
+
+      .para{
+  color: #000000;
+  font-size: 15px;
+
+}
+.row-2{
+        display: flex;
+        float: left;
+        flex-direction: row;
+        color: #B82B20;
+        margin-top: 10px;
+        margin-bottom: 2rem;
+        padding-left: 1px;
+		margin-left: -100px;
+  }
+    
+.col_2{
+  float: right;
+   width: 25%;
+   padding: 20 15px ;
+     margin-left: 180px;
+	 margin-top: -3px;
+     
+}
+.col_1{
+  float: right;
+  margin-top: 50px;
+  margin-left: 0px;
+
+}
+
+ul{
+  list-style: none;
+}
+
+.view-img{
+margin-top:2rem;
+transform: translateX(24rem); 
+}
+.copyright{
+color: #B82B20;
+font-size:14px;
+width: 150%;
+transform: translate(-60rem, 19rem);
+text-align: center;
+margin-left: -4rem;
+color: #B82B20;
+}
+body{
+font-family: 'PT Sans', sans-serif;
+}
+  .img{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+  
+    background: linear-gradient(180deg,rgba(35,88,187,0.5)0%,rgba(201,39,38,0.5)),url("image 26.png");
+  }
+
+
+  .p{
+    transform: translateY(-350px);
+    text-align: center;
+    
+    color: #ffff;
+    font-size:24px;
+
+}
+  .img-1{
+    width: 88%;
+  }
+  .text{
+    margin-top: -80px;
+  }
+  .ht{
+  margin-top:-30px;
+  }
+</style>
+<body>
+	<header>
+  <a href="index.html" ><img src="images/evolutlogo.png" width="225px" height="75px" class="logo"></img></a> 
+  <ul>
+	<li> <a href="index.html#AboutUs"><b> ABOUT US</b></a></li>
+	<li> <a href="blog.html"><b> BLOG </b></a></li>
+	<li> <a href="news.html"><b> NEWS </b></a></li>
+	<li> <a href="index.html#Contact"><b> CONTACT US </b></a></li>
+	</ul>
+</header>
+<script type="text/javascript">
+   window.addEventListener("scroll", function(){
+     var header = document.querySelector("header");
+	 header.classList.toggle("sticky",window.scrollY > 0);
+	 })
+</script>	
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <img class="img"></img>
+      <p class="p">#evolutwellness<br/><br/><b style="font-size: 26px;">Why is Detoxification good for you?</b></p>
+    
+  </div>
+</div>
+  <div class="row">
+  <div class="col-12 text">
+
+  <p style="margin-right: 4%; margin-left: 4%; ">  In recent years we have departed from the ways of living under natural conditions, like the various
+problems on earth, the toxicity of our planet is undeniable. The air we breathe, the food we eat, and the
+water we drink are all loaded with toxic chemicals that cause suffering. If you feel sluggish and lazy
+lately, your body is asking to detoxify.
+<br>
+<br>
+<b>What is Detoxification?</b>
+<br>
+Detoxification is a process to get your body rid of various toxins. It aids in strengthening the immune
+system, rejuvenate skin and boost mental health, amongst many other health benefits. Detoxifying
+brings balance back to your life and helps your system function correctly. Detoxifying will not only
+rejuvenate your physical health but also helps in maintaining your mental health. Detox makes you
+jump-start your body for a more active and healthier life.
+<br>
+<br>
+<b>Why is it important to detox your body?</b>
+<br>
+There are five primary sources of toxins that we regularly intake- food, water, beauty, personal care
+items, environment, and negative thinking. It is essential to detoxify your body from time to time to
+avoid unnecessary physical and health issues like headaches, insomnia, diseases, chronic fatigue, etc.
+Detoxifying helps boost your immunity system and enables you to concentrate and sleep better.
+Choosing to detoxify your body adapts this healthier lifestyle and betters itself in no time.</p>
+<br>
+<br>
+  
+  <center>  <img src="images/Detox.png"/></center>
+
+<p style="margin-right: 4%; margin-left: 4%; ">
+<b>When to detox your body?</b>
+<br>
+Your body will give you signs that you need to break from all those toxins and choose a healthy
+alternative. Here are a few signs you can look out for:
+1. Food and scent intolerances
+2. Digestive issues like diarrhoea, constipation, etc.
+3. Frequent colds and viruses
+4. Continuous headaches
+5. Body aches
+6. Fatigue and low energy
+7. Inability to sleep
+8. Inability to lose weight
+9. Cannot concentrate on activities
+10. Mood swings
+11. Unpleasant body odour
+<br>
+<br>
+<b>Benefits of detoxing:</b>
+<br>
+1. It helps in removing body toxins
+<br>
+2. It helps in losing weight
+<br>
+3. Energizes your body
+<br>
+4. It helps your skin glow
+<br>
+5. Improves your mental health
+<br>
+6. It helps in getting rid of unnecessary food cravings
+<br>
+<br>
+<b>How to detoxify your body?</b>
+<br>
+1. Limit alcohol: excessive drinking can severely damage your liver function by causing the fat to
+build up, and it scars the organ. Abstaining from alcohol is one of the best ways to keep your
+liver healthy. This is one of the best ways to detox your body.
+<br>
+2. Focusing on sleeping better: Sleeping allows the brain to recharge and remove toxic waste
+accumulated throughout the day.
+<br>
+3. Drinking lots of water: Water does so much more than just quenching your thirst. It majorly
+detoxifies your body by removing waste products.
+<br>
+4. Reducing sugar and processed food intake: high sugar products consumption has been linked to
+many chronic diseases. By consuming less junk food, you allow your body to detoxify naturally.
+<br>
+5. Eat antioxidant-rich food: antioxidants protect your cells against damages. Eating berries, fruits,
+nuts, cocoa, vegetables, spices, and beverages like green tea has the highest antioxidants.
+<br>
+6. Exercising regularly: Regular exercise is associated with a longer life and reduces many diseases.
+It increases your immune system helping you to fight against any disease.
+<br>
+<br>
+Detoxing eliminates toxins, which helps improve health and promotes weight loss. You can enhance
+your body’s natural detoxification system by staying hydrated, sleeping well, consuming less junk food,
+getting active, and following an antioxidant-rich diet.
+</p>
+   <br/><br/> 
+  </div>
+ </div>
+<div class="row">
+ <a href="blog.html"> <img src="images/Group 231.png" style="float: left; margin-left: 4%;" ><p style="float: left; color: #B82B20; padding-top: 4px; transform: translate(5px,-15px);">Previous</p></img></a>
+</div>
+<br>
+	 <footer >
+      <div class="container">
+        <div class="row-2">
+          <div class="col">
+          <img src="images/evolutlogo.png"/>
+            <P class="para">Evolut Established in 2020.Evolut is a combination of
+             many things,fitness,yoga, and nutrition are among them.
+            Instead of making fitness a chore, we are attempting to
+             help people make it a lifestyle choice, by exercising and
+              eating right </P><br/>
+               <a href="https://www.facebook.com/evolutwellness">  <img src="images/path 1205.png"/></a>&nbsp &nbsp &nbsp &nbsp
+              <a href="https://www.instagram.com/evolutwellness/">   <img src="images/instagram.png"/> </a>&nbsp &nbsp &nbsp &nbsp
+			    <a href="https://www.linkedin.com/company/evolut-wellness/">  <img src="images/linkedin-in-grad.png" style="width:25px;"/></a>&nbsp &nbsp &nbsp &nbsp &nbsp
+			  <a href="https://twitter.com/evolutwellness"> <img src="images/path 1202.png" style="transform:translateY(2px);"/></a>
+                                 
+          </div>
+            <div class="col_2">
+               
+              <ul style="margin-left:-32px;">
+			 <li>  <p style="color:#97212D; font-size:24px;">Get In Touch</p> </li>
+            <li class="ht"> <img src="images/Line 72.png" style="margin-top: -0px;" />&nbsp &nbsp &nbsp </li>
+              <p style="font-size:20px">Address</p>
+                <li><img src="images/path 3879.png" alt="not found"  />&nbsp Flat no 209, Aparna Green Apartments, Nanakramguda, Hyd-500008.</li>
+				<br>
+                <li><img src="images/clock.png" alt="not found" />&nbsp Mon-Fri 08:00 AM - 09:00 PM</li>
+              </ul>
+            </div><br/>
+              <div class="col_1">
+               <p style="margin-top: 33px; color:#97212D; font-size:20px;">Contact Info</p> 
+                <ul style="margin-left:-37px;">
+                  <li><img src="images/Group 1703.png" alt="not found" />&nbsp help@evolutwellness.com</li><br/>
+                </ul>           
+              </div>
+      
+        </div>
+      </div><br/>
+ 
+    </footer>
+<br/> 
+</body>
+</html>

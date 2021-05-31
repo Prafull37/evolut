@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>blog</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<style type="text/css">
+body{
+font-family: 'PT Sans', sans-serif;
+}
+  header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content: space-between;
+align-items: center;
+transition: 0.6s;
+padding: 10px 50px;
+z-index:100;
+}
+header .logo{
+  filter: brightness(0) invert(1);
+  padding-left: 10px;
+}
+header ul{
+position:relative;
+display:flex;
+justify-content: center;
+align-items:center;
+padding-right: 80px;
+}
+header ul li{
+position:relative;
+list-style:none;
+font-family: PT Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+float:left;
+padding-right: 20px;
+}
+header ul li a{
+position:relative;
+margin: 0px 10px;
+text-decoration:none;
+color:#FFFFFF;
+letter-spacing:2px;
+font-weight:500px;
+}
+header ul li a:hover{
+ color:#fff;
+ transition: .9s
+ z-index:101;
+}
+header ul li a::after{
+	 content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s ease;
+	text-decoration:none;
+}
+
+header ul li a:hover:after{
+	transform:scaleX(1);
+}
+header.sticky {
+ background:#FFFFFF;
+ padding: 0px 40px;
+}
+header.sticky ul li a{
+color: #B82B20;
+}
+header.sticky ul li a::after{
+	background-color:  #B82B20;
+    color: #B82B20;
+}
+header.sticky .logo{
+filter:none;
+}
+.ht{
+margin-top:-30px;
+}
+
+
+		body{
+		}
+	.date{
+		font-size:16px;
+		}
+	.title{
+		color:  #B82B20;
+		}
+	.desc{
+		font-size:16px;
+		}
+	a{
+		text-decoration:none;
+		}
+	.row{
+		margin-top:0px;
+		}
+		.a1{
+			color: #B82B20;
+			text-decoration: none;
+		}
+	.img-1{
+    padding: 0px 0px;
+    width: 100%;
+    height: 590px;
+    text-align: center;
+    background: linear-gradient(180deg,rgba(35,88,187,0.5)0%,rgba(201,39,38,0.5)),url("images/image 33.png");
+  }
+	.title-1{
+		font-family: PT Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: center;
+transform:translateY(-350px);
+color:#ffffff;
+	}
+.descrip{
+	font-family: PT Sans;
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 0px;
+text-align: center;
+color:#ffffff;
+transform:translateY(-350px);
+
+	}
+	.anchor{
+	text-decoration:none;
+	}
+	
+     .container3{
+   box-sizing: border-box;
+        width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    color: #B82B20;
+    
+
+      }
+      
+
+      
+      .footer{
+   box-sizing: border-box;
+    padding: 70px 0;
+}
+.main{
+   box-sizing: border-box;
+        color:#B82B20 ;
+
+      }
+      .para{
+  color: #000000;
+  font-size: 15px;
+
+}
+.row-1{
+        display: flex;
+        float: left;
+        flex-direction: row;
+        color: #B82B20;
+        margin-top: 10px;
+        margin-bottom: 2rem;
+        padding-left: 1px;
+  }
+    
+.col{
+  float: right;
+   width: 25%;
+   padding: 20 15px ;
+     margin-left: 180px;
+	 color:#97212D;
+     
+}
+.col_1{
+  float: right;
+  margin-top: 84px;
+  margin-left: 0px;
+  color:#97212D;
+
+}
+
+
+     .container1{
+   box-sizing: border-box;
+        width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    color: #B82B20;
+    
+
+      }
+      
+      .footer{
+   box-sizing: border-box;
+    padding: 70px 0;
+}
+
+      .para{
+  color: #000000;
+  font-size: 15px;
+
+}
+.row-2{
+        display: flex;
+        float: left;
+        flex-direction: row;
+        color: #B82B20;
+        margin-top: 10px;
+        margin-bottom: 2rem;
+        padding-left: 1px;
+		margin-left: -100px;
+  }
+    
+.col_2{
+  float: right;
+   width: 25%;
+   padding: 20 15px ;
+     margin-left: 180px;
+	 margin-top: 14px;
+	 color:#97212D;
+     
+}
+.col_1{
+  float: right;
+  margin-top: 68px;
+  margin-left: 0px;
+
+}
+
+ul{
+  list-style: none;
+}
+
+.view-img{
+margin-top:2rem;
+transform: translateX(24rem); 
+}
+.copyright{
+color: #B82B20;
+font-size:14px;
+width: 150%;
+transform: translate(-60rem, 19rem);
+text-align: center;
+margin-left: -4rem;
+color: #B82B20;
+}
+body{
+font-family: 'PT Sans', sans-serif;
+}
+  .img{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+  
+    background: linear-gradient(180deg,rgba(35,88,187,0.5)0%,rgba(201,39,38,0.5)),url("images/image 26.png");
+  }
+
+
+  .p{
+    transform: translateY(-350px);
+    text-align: center;
+	font-family:6px;
+    
+    color: #ffff;
+    font-size:24px;
+
+}
+  .img-1{
+    width: 88%;
+  }
+  .text{
+    margin-top: -80px;
+  }
+</style>
+<body>
+
+	<header>
+  <a href="index.html" ><img src="images/evolutlogo.png" width="225px" height="75px" class="logo"></img></a> 
+  <ul>
+	<li> <a href="index.html#AboutUs"><b> ABOUT US</b></a></li>
+	<li> <a href="blog.html"><b> BLOG </b></a></li>
+	<li> <a href="news.html"><b> NEWS </b></a></li>
+	<li> <a href="#"><b> CONTACT US </b></a></li>
+	</ul>
+</header>
+<script type="text/javascript">
+   window.addEventListener("scroll", function(){
+     var header = document.querySelector("header");
+	 header.classList.toggle("sticky",window.scrollY > 0);
+	 })
+</script>	
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <img class="img"></img>
+      <p class="p">#evolutwellness<br/><br/><b style="font-size: 30px;">IPL 2021: Delhi Capitals (DC) ropes in Evolut 
+as its Official Health Accomplice</b></p>
+    
+  </div>
+</div>
+  <div class="row">
+  <div class="col-12 text">
+
+  <p style="margin-right: 4%; margin-left: 4%; "> Delhi Capitals have signed the health brand- Evolut as its official health associate forward of IPL 2021. Evolut is a health app that gives a wide selection of fitness-related options. From yoga to eating regimen plans, Evolut has obtained all of it. Itâ€™s a one-stop-shop for all health aficionados. Delhi Capitals being a face of the youth is an ideal host for a health model and with the affiliation with the Delhi Capitals, Evolut will look to draw the millennials and proliferate into the bag market of health.
+<br/><br/>
+Delhi Capitals (DC) shared a video on Twitter to announce its signing with the health model. Gamers like- Rishabh Pant, Prithvi Shaw, Ajinkya Rahane, Ravi Ashwin, Shikhar Dhawan amongst others, will be seen within the video.
+<br/><br/>
+Talking on the affiliation, Evolut founder Vinuthna Gorripati and Co-founder Meghana Nidadavolu stated, "There isn't a one-way of main a balanced life. It's a mixture of many issues, and health, yoga, and vitamin are amongst them. As a substitute of creating health a chore, we are trying to assist folks make it a way of life alternative, by exercising and consuming proper. We're excited to associate with Delhi Capitals, a vibrant group filled with skilled and younger gamers, who're icons on and off the sphere. Along with the sponsorship, Evolut may also be operating a model marketing campaign all through the IPL season, and shall be developing with an thrilling announcement quickly."
+</p>
+
+  
+  <center>  <img src="images/image 24.png" class="img-1" /></center>
+
+<p style="margin-right: 4%; margin-left: 4%; ">
+"We're delighted to welcome Evolut Wellness on board as our Health Accomplice," Delhi Capitals CEO Vinod Bisht stated. "Health is the bedrock of any sport, however to make sure the gamers are at their absolute best whereas acting on the sphere, it's essential for them to guide wholesome lives off it. The significance of holistic wellness has been felt much more for the reason that pandemic hit the world. Iâ€™m assured this shall be a profitable partnership for each DC and Evolut."
+ <br/><br/> 
+Take a look at the checklist of all of the sponsors of Delhi Capitals in IPL 2021:
+ <br/><br/> 
+Equipment Producer: Wrogn Energetic
+ <br/><br/> 
+Shirt Sponsor (Entrance): JSW Group
+ <br/><br/> 
+Shirt Sponsor (Again): EbixCash
+ <br/><br/> 
+Chest Branding: APL Apollo Metal Tubes
+ <br/><br/> 
+IPL 2021 Delhi Capitals (DC) Squad:Shreyas Iyer (c), Shikhar Dhawan, Prithvi Shaw, Ajinkya Rahane, Rishabh Pant (wk), Shimron Hetmyer, Marcus Stoinis, Chris Woakes, R Ashwin, Axar Patel, Amit Mishra, Lalit Yadav, Pravin Dubey, Kagiso Rabada, Anrich Nortje, Ishant Sharma, Avesh Khan, Steve Smith, Umesh Yadav, Ripal Patel, Vishnu Vinod, Lukman Meriwala, M Siddarth, Tom Curran, Sam Billings.</p>
+   <br/><br/> 
+  </div>
+ </div>
+</div>
+<div class="row">
+  <img src="images/Group 231.png" style="float: left; margin-left: 4%;" ><p style="float: left; color: #B82B20; padding-top: 2px;">previous</p></img>
+  <img src="images/Group 2313.png" style="float: right; margin-right: 4%;" ><p style="float: right;color: #B82B20;margin-bottom: 4%;">Next</p></img>
+</div>
+
+<br>		
+<br>		
+		 <footer >
+      <div class="container">
+        <div class="row-2">
+          <div class="col">
+          <img src="images/evolutlogo.png"/>
+            <P class="para">Evolut Established in 2020.Evolut is a combination of
+             many things,fitness,yoga, and nutrition are among them.
+            Instead of making fitness a chore, we are attempting to
+             help people make it a lifestyle choice, by exercising and
+              eating right </P><br/>
+              <img src="images/path 1205.png"/>&nbsp &nbsp &nbsp &nbsp
+          <img src="images/path 1202.png"/>&nbsp &nbsp &nbsp &nbsp
+          <img src="images/instagram.png"/>
+                                 
+          </div>
+            <div class="col_2">
+               
+              <ul style="margin-left:-32px;">
+			 <li>  <p style="color:#97212D; font-size:24px;">Get In Touch</p> </li>
+            <li class="ht"> <img src="images/Line 72.png" style="margin-top: -0px;" />&nbsp &nbsp &nbsp </li>
+              <p style="font-size:20px">Address</p>
+                <li><img src="images/path 3879.png" alt="not found"  />&nbsp Flat no 209, Aparna Green Apartments, Nanakramguda, Hyd-500008.</li>
+				<br>
+                <li><img src="images/clock.png" alt="not found" />&nbsp Mon-Fri 08:00 AM - 09:00 PM</li>
+              </ul>
+            </div><br/>
+              <div class="col_1">
+               <p style="margin-top: 33px; color:#97212D; font-size:20px;">Contact Info</p> 
+                <ul style="margin-left:-37px;">
+                  <li><img src="images/Group 1703.png" alt="not found" />&nbsp help@evoultwellness.com</li><br/>
+                </ul>           
+              </div>
+      
+        </div>
+      </div><br/>
+ 
+    </footer>
+<br/> 
+</body>
+</html>

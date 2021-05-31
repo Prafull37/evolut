@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>blog</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<style type="text/css">
+	header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content: space-between;
+align-items: center;
+transition: 0.6s;
+padding: 10px 50px;
+z-index:100;
+}
+header .logo{
+  filter: brightness(0) invert(1);
+  padding-left: 10px;
+}
+header ul{
+position:relative;
+display:flex;
+justify-content: center;
+align-items:center;
+padding-right: 80px;
+}
+header ul li{
+position:relative;
+list-style:none;
+font-family: PT Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+float:left;
+padding-right: 20px;
+}
+header ul li a{
+position:relative;
+margin: 0px 10px;
+text-decoration:none;
+color:#FFFFFF;
+letter-spacing:2px;
+font-weight:500px;
+}
+header ul li a:hover{
+ color:#fff;
+ transition: .9s
+ z-index:101;
+}
+header ul li a::after{
+	 content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s ease;
+	text-decoration:none;
+}
+
+header ul li a:hover:after{
+	transform:scaleX(1);
+}
+header.sticky {
+ background:#FFFFFF;
+ padding: 0px 40px;
+}
+header.sticky ul li a{
+color: #B82B20;
+}
+header.sticky ul li a::after{
+	background-color:  #B82B20;
+    color: #B82B20;
+}
+header.sticky .logo{
+filter:none;
+}
+
+
+		body{
+		}
+	.date{
+		font-size:16px;
+		}
+	.title{
+		color:  #B82B20;
+		}
+	.desc{
+		font-size:16px;
+		}
+	a{
+		text-decoration:none;
+		}
+	.row{
+		margin-top:0px;
+		}
+		.a1{
+			color: #B82B20;
+			text-decoration: none;
+		}
+	.img-1{
+    padding: 0px 0px;
+    width: 100%;
+    height: 590px;
+    text-align: center;
+    background: linear-gradient(180deg,rgba(35,88,187,0.5)0%,rgba(201,39,38,0.5)),url("images/image 33.png");
+  }
+	.title-1{
+		font-family: PT Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: center;
+transform:translateY(-350px);
+color:#ffffff;
+	}
+.descrip{
+	font-family: PT Sans;
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 0px;
+text-align: center;
+color:#ffffff;
+transform:translateY(-350px);
+
+	}
+	.anchor{
+	text-decoration:none;
+	}
+	
+     .container3{
+   box-sizing: border-box;
+        width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    color: #B82B20;
+    
+
+      }
+      
+
+      
+      .footer{
+   box-sizing: border-box;
+    padding: 70px 0;
+}
+.main{
+   box-sizing: border-box;
+        color:#B82B20 ;
+
+      }
+      .para{
+  color: #000000;
+  font-size: 15px;
+
+}
+.row-1{
+        display: flex;
+        float: left;
+        flex-direction: row;
+        color: #B82B20;
+        margin-top: 10px;
+        margin-bottom: 2rem;
+        padding-left: 1px;
+  }
+    
+.col{
+  float: right;
+   width: 25%;
+   padding: 20 15px ;
+     margin-left: 180px;
+     
+}
+.col_1{
+  float: right;
+  margin-top: 84px;
+  margin-left: 0px;
+
+}
+
+
+     .container1{
+   box-sizing: border-box;
+        width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    color: #B82B20;
+    
+
+      }
+      
+      .footer{
+   box-sizing: border-box;
+    padding: 70px 0;
+}
+
+      .para{
+  color: #000000;
+  font-size: 15px;
+
+}
+.row-2{
+        display: flex;
+        float: left;
+        flex-direction: row;
+        color: #B82B20;
+        margin-top: 10px;
+        margin-bottom: 2rem;
+        padding-left: 1px;
+		margin-left: -100px;
+  }
+    
+.col_2{
+  float: right;
+   width: 25%;
+   padding: 20 15px ;
+     margin-left: 180px;
+	 margin-top: -3px;
+     
+}
+.col_1{
+  float: right;
+  margin-top: 50px;
+  margin-left: 0px;
+
+}
+
+ul{
+  list-style: none;
+}
+
+.view-img{
+margin-top:2rem;
+transform: translateX(24rem); 
+}
+.copyright{
+color: #B82B20;
+font-size:14px;
+width: 150%;
+transform: translate(-60rem, 19rem);
+text-align: center;
+margin-left: -4rem;
+color: #B82B20;
+}
+body{
+font-family: 'PT Sans', sans-serif;
+}
+  .img{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+  
+    background: linear-gradient(180deg,rgba(35,88,187,0.5)0%,rgba(201,39,38,0.5)),url("image 26.png");
+  }
+
+
+  .p{
+    transform: translateY(-350px);
+    text-align: center;
+    
+    color: #ffff;
+    font-size:24px;
+
+}
+  .img-1{
+    width: 88%;
+  }
+  .text{
+    margin-top: -80px;
+  }
+  .ht{
+  margin-top:-30px;
+  }
+</style>
+<body>
+	<header>
+  <a href="file:///C|/Users/nishanth/Downloads/Evolut/Evolut/evolut-2/index.html" ><img src="file:///C|/Users/nishanth/Downloads/Evolut/Evolut/evolut-2/images/evolutlogo.png" width="225px" height="75px" class="logo"></img></a> 
+  <ul>
+	<li> <a href="file:///C|/Users/nishanth/Downloads/Evolut/Evolut/evolut-2/index.html#AboutUs"><b> ABOUT US</b></a></li>
+	<li> <a href="#"><b> BLOG </b></a></li>
+	<li> <a href="file:///C|/Users/nishanth/Downloads/Evolut/Evolut/evolut-2/news.html"><b> NEWS </b></a></li>
+	<li> <a href="#"><b> CONTACT US </b></a></li>
+	</ul>
+</header>
+<script type="text/javascript">
+   window.addEventListener("scroll", function(){
+     var header = document.querySelector("header");
+	 header.classList.toggle("sticky",window.scrollY > 0);
+	 })
+</script>	
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <img class="img"></img>
+      <p class="p">#evolutwellness<br/><br/><b style="font-size: 26px;">10 Easy Tips for Healthy Holiday Season</b></p>
+    
+  </div>
+</div>
+  <div class="row">
+  <div class="col-12 text">
+
+  <p style="margin-right: 4%; margin-left: 4%; ">  After a long and challenging year, everyone is looking forward to a happy and celebratory Christmas and New Year's Eve holidays!
+<br/><br/>
+The holiday season is associated with warmth, comfort, family, joy, celebrations, delicious food and fun. Food and festivities often go together, and it can be quite hard to control temptation at the sight of the tables laden with all sorts of a delicious feast. The widespread laid with mouth-watering dishes and tempting pastries is a real challenge even for the most dedicated health advocates to be healthy during the holidays.
+<br/><br/>
+Also, along with the holidays comes stress and high emotions during the holiday season rise because of the planning, cooking and arranging everything about the gathering. This stress results mostly in ignoring nutrition facts, diet plan and overeating unhealthy food and snacks. People invariably often overeat during the holiday season, and this tends to become a lousy eating habit over some time. Once you are locked into this vicious circle, you tend to lose your enthusiasm for a healthy lifestyle, start feeling powerless and lose the will to self-control. Unfortunately, although delicious, unhealthy snacking leads to all sorts of dire consequences for your health, such as bloating, diabetes, high blood pressure, high cholesterol, obesity, mental health issues, and low self-esteem. Although weight gain during the holidays may not be significant but may even increase over time.
+<br/><br/>
+That's why Evolut offers an alternative way of eating healthily during the holidays so that you can lead a healthy lifestyle and your celebrations with your family and friends are cherished without health worries.</p>
+
+  
+  <center>  <img src="images/image 4-1.png" /></center>
+
+<p style="margin-right: 4%; margin-left: 4%; ">
+1. Choose plenty of plant-based options - fruits, vegetables, whole grains, legumes, seeds and nuts, are always great for your health.
+<br/><br/>
+2. Choose fresh and ripe fruits and vegetables over frozen or canned variants. Fresh fruits and vegetables are high in vitamins, minerals and easily digestible add them to your high protein breakfast. Eat them whole, boil, steam or saute them for added flavour.
+<br/><br/>
+3. Start the day with fresh juices from fresh fruits and vegetables. Juices are best digested in the morning on an empty stomach. Choose fruits with low glucose levels. Citrus fruits are always a great option.
+<br/><br/>
+4. Have a fibre, fatty meal. Unrefined foods are rich in fibre. This includes brown rice, green buckwheat, millet, ragi, bajra, quinoa, oats, beans, lentils, chickpeas, mung dal etc. Fibres help us better eliminate food waste, help maintain adequate cholesterol levels. It is also great for the detoxification of our body.
+<br/><br/>
+5. Stick to an eating guide, choose whole-grain bread made from whole grain flours (rye, spelt, barley), with no added fat, but with seeds and nuts for flavour and texture. For those with gluten intolerance, we recommend whole grain gluten-free tortillas from corn, rice or millet flour.
+<br/><br/>
+6. Add flavour to your food with various spices such as fenugreek, celery, mint, oregano, basil, paprika, turmeric, dill, parsley and a few chilli spices such as white pepper, red pepper, ginger. Be careful with the salt; use it in small quantities for flavouring.
+<br/><br/>
+7. Eat only when you are starving. Only then, your body can work to digest and absorb nutrients. This enables weight loss, makes food more enjoyable, high in nutrients and energy.
+<br/><br/>
+8. Avoid sugar. The holiday season is a miss without desserts, so choose a healthy variant like a chia pudding over a chocolate fudge brownie.
+<br/><br/>
+9. Eat-in a pleasant and healthy atmosphere with close friends and family at a beautifully arranged table with dishes.
+<br/><br/>
+10. Consult a fitness coach. Exercise as much as possible for your physical health is 50% based on blood circulation. Take regular short walks and do a few yoga asanas as well as more intense workouts and aerobics to achieve weight loss try to spend the weekends outdoors in nature; biking, in particular, is very good for your physical and mental health.</p>
+   <br/><br/> 
+  </div>
+ </div>
+<div class="row">
+ <a href="blog.html"> <img src="images/Group 231.png" style="float: left; margin-left: 4%;" ><p style="float: left; color: #B82B20; padding-top: 4px;">previous</p></img></a>
+</div>
+<br>
+	 <footer >
+      <div class="container">
+        <div class="row-2">
+          <div class="col">
+          <img src="images/evolutlogo.png"/>
+            <P class="para">Evolut Established in 2020.Evolut is a combination of
+             many things,fitness,yoga, and nutrition are among them.
+            Instead of making fitness a chore, we are attempting to
+             help people make it a lifestyle choice, by exercising and
+              eating right </P><br/>
+              <img src="images/path 1205.png"/>&nbsp &nbsp &nbsp &nbsp
+          <img src="images/path 1202.png"/>&nbsp &nbsp &nbsp &nbsp
+          <img src="images/instagram.png"/>
+                                 
+          </div>
+            <div class="col_2">
+               
+              <ul style="margin-left:-32px;">
+			 <li>  <p style="color:#97212D; font-size:24px;">Get In Touch</p> </li>
+            <li class="ht"> <img src="images/Line 72.png" style="margin-top: -0px;" />&nbsp &nbsp &nbsp </li>
+              <p style="font-size:20px">Address</p>
+                <li><img src="images/path 3879.png" alt="not found"  />&nbsp Flat no 209, Aparna Green Apartments, Nanakramguda, Hyd-500008.</li>
+				<br>
+                <li><img src="images/clock.png" alt="not found" />&nbsp Mon-Fri 08:00 AM - 09:00 PM</li>
+              </ul>
+            </div><br/>
+              <div class="col_1">
+               <p style="margin-top: 33px; color:#97212D; font-size:20px;">Contact Info</p> 
+                <ul style="margin-left:-37px;">
+                  <li><img src="images/Group 1703.png" alt="not found" />&nbsp help@evoultwellness.com</li><br/>
+                </ul>           
+              </div>
+      
+        </div>
+      </div><br/>
+ 
+    </footer>
+<br/> 
+</body>
+</html>
